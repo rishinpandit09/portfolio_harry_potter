@@ -1,7 +1,17 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    // → Enable the new JSX transform so you don’t need `import React from "react"`
+    "jsx": "react-jsx",
+
+    // → Don’t choke on type-only libraries
+    "skipLibCheck": true,
+
+    // → Make sure `@types/react` and `@types/react-dom` get picked up
+    "types": ["react", "react-dom"]
+
+    // (you can keep any other options your template already includes,
+    //  like module, target, strict, etc.)
+  },
+  // point at your source files
+  "include": ["src"]
 }

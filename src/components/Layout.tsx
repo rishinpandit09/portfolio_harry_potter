@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavLink from "./NavLink";
 import hogwartsCrest from "../assets/hogwarts-crest.svg";
 

@@ -1,27 +1,35 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
+    // Target modern browsers and enable class field support
+    "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "incremental": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    // Standard libs
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    // Skip checking types in all declaration files (faster builds)
+    "skipLibCheck": true,
+
+    // Module interop and default imports
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+
+    // Strict type-checking options
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // ES modules + JSON support
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+
+    // Enable the new JSX transform so you can drop `import React` just for JSX
     "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "types": ["react"]
+    // Make sure React’s types are available
+    "types": ["react", "react-dom"]
   },
   "include": ["src"]
 }

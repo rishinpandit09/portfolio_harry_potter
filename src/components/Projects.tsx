@@ -1,5 +1,3 @@
-import React from "react";
-
 const projects = [
   {
     title: "Accountill – Scalable MERN Stack Invoicing Platform",
