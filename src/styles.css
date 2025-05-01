@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ——————— Global Resets & Layout ——————— */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 p-0 min-h-screen relative bg-parchment font-potter;
+  background: linear-gradient(135deg, #fdf6e3, #ede4d3);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#root {
+  @apply relative z-10 w-full;
+}
+
+/* ——————— Component Styles ——————— */
+@layer components {
+  /* 1) Navbar container */
+  .navbar {
+    @apply sticky top-0 z-20 w-full bg-wand/90
+           shadow-magical backdrop-blur-sm py-4;
+  }
+
+  /* 1a) Brand text (“Rishin Pandit”) override to white */
+  .navbar .text-ravenclaw {
+    @apply text-white;
+  }
+
+  /* 2) NavLink: all tabs (inactive/active) white by default */
+  .nav-link {
+    @apply relative inline-flex items-center px-4 py-2
+           text-sm font-lumos text-white
+           transition-all duration-300 ease-in-out;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-0.5 w-0
+           bg-hufflepuff rounded-full
+           transition-all duration-300 ease-in-out opacity-0;
+  }
+  /* underline on hover or active */
+  .nav-link:hover::after,
+  .nav-link-active::after {
+    @apply w-full opacity-100;
+  }
+  /* hover: gold text + soft brown background */
+  .nav-link:hover {
+    @apply text-hufflepuff bg-wand/70 shadow-magical;
+  }
+  /* active: gold text + darker brown pill */
+  .nav-link-active {
+    @apply text-hufflepuff bg-wand/70 rounded-md shadow-inner;
+  }
+
+  /* 3) Spellbook–style card with Hogwarts crest watermark */
+  .card {
+    @apply relative bg-parchment/90 border-2 border-wand
+           rounded-2xl shadow-magical p-6 overflow-hidden
+           transition-transform duration-300;
+  }
+  .card:hover {
+    @apply scale-105 shadow-lg bg-parchment;
+  }
+  .card::before {
+    content: "";
+    @apply absolute inset-0 bg-no-repeat opacity-10 pointer-events-none;
+    background-image: url("/assets/hogwarts-crest.svg");
+    background-position: center;
+    background-size: 70%;
+  }
+
+  /* 4) Skills cards (“Spells & Charms”) */
+  .skill-card {
+    @apply bg-slytherin/90 text-hufflepuff font-lumos font-semibold
+           border-2 border-hufflepuff rounded-xl shadow-inner p-4
+           flex items-center justify-center
+           transition-transform duration-200 transform
+           hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  /* 5) Hero avatar with magical border */
+  .avatar {
+    @apply w-40 h-40 rounded-full border-4 border-silver
+           shadow-magical mx-auto mb-8;
+  }
+
+  /* 6) Section wrapper with subtle glow */
+  .section {
+    @apply py-20 text-center text-ravenclaw;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 6a) Remove extra top padding on #about only */
+  #about.section {
+    @apply pt-0;
+  }
+
+  /* 7) Buttons styled like potion bottles */
+  .btn {
+    @apply px-6 py-2 rounded-full font-lumos text-white
+           bg-slytherin shadow-magical
+           hover:bg-slytherin/80 transition-all duration-300;
+  }
+
+  /* 8) Debug helper */
+  .debug-border {
+    @apply border-2 border-silver;
+  }
+}
