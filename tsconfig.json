@@ -1,19 +1,29 @@
 {
   "compilerOptions": {
-    // → Enable the new JSX transform so you don’t need `import React from "react"`
+    // Target modern browsers with ESNext features
+    "target": "ESNext",
+    // Include standard library definitions for the DOM and ESNext
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // Use native ES modules
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    // Enable the new React JSX transform (no need to import React for JSX)
     "jsx": "react-jsx",
+    // Strict type‐checking options
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    // Allow default imports from CommonJS modules
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-
-    // → Don’t choke on type-only libraries
+    // Skip type‐checking of declaration files for faster builds
     "skipLibCheck": true,
-
-    // → Make sure `@types/react` and `@types/react-dom` get picked up
+    // Support importing JSON files
+    "resolveJsonModule": true,
+    // Ensure each file is treated as an isolated module
+    "isolatedModules": true,
+    // Pull in React’s type definitions
     "types": ["react", "react-dom"]
-
-    // (you can keep any other options your template already includes,
-    //  like module, target, strict, etc.)
   },
-  // point at your source files
+  // Point at your source files
   "include": ["src"]
 }
