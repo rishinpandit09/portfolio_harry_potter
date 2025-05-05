@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Tesla Fleet Analytics Dashboard",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/Fleet-Energy-Cost-Analytics",
     tech: ["Python", "Flask", "PostgreSQL", "Plotly", "Tessie API"],
     bullets: [
       "Conjured a dashboard to track Tesla fleet data like speed and battery.",
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "Mutual Fund Recommender System",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/Mutual-Fund-Recommender-System",
     tech: ["Python (Flask)", "Pandas", "Scikit-learn", "TF-IDF", "Streamlit"],
     bullets: [
       "Built a recommendation engine using cosine similarity over 14K funds.",
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "VidInsight – YouTube Analytics and Recommendations",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/VidInsight-YouTube-Analytics-and-Recommendations",
     tech: [
       "MongoDB",
       "Express.js",

@@ -6,28 +6,24 @@ const exp = [
     company: "University of Windsor",
     period: "Jan 2025 – Apr 2025",
     loc: "Windsor, Ontario",
-    skills: "Python, Pandas, PostgreSQL, Docker",
   },
   {
     role: "Software Engineer",
     company: "Navtech",
     period: "Jul 2023 – Nov 2023",
     loc: "Hyderabad, India",
-    skills: "AWS, Docker, Django, FastAPI, React.js",
   },
   {
     role: "Software Engineer Intern",
     company: "CloudDefense.AI",
     period: "Mar 2023 – Jun 2023",
     loc: "Palo Alto, CA",
-    skills: "Java, Spring Boot, AWS, React.js, Docker",
   },
   {
     role: "Software Intern",
     company: "Lenskart.com",
     period: "Feb 2022 – Aug 2022",
     loc: "Bengaluru, India",
-    skills: "Java, Spring Boot, Python, JS",
   },
 ];
 
@@ -87,7 +83,6 @@ export default function About() {
             <span className="text-sm text-ravenclaw block mb-2">
               {e.period} • {e.loc}
             </span>
-            <p className="text-sm text-ravenclaw">Skills: {e.skills}</p>
           </li>
         ))}
       </ul>

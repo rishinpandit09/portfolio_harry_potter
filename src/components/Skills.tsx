@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 const skills = [
+  "Java",
+  "Spring Boot",
   "Node.js",
   "Express.js",
   "React.js",
