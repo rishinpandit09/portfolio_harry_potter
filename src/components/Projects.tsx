@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Accountill – Scalable MERN Stack Invoicing Platform",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/Accountill-Scalable-MERN-Stack-Invoicing-Platform",
     tech: [
       "Node.js",
       "Express.js",
@@ -58,7 +58,7 @@ const projects = [
   },
   {
     title: "Online Compiler – Multi-Language Cloud-Based Compiler",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/Online-Compiler-Multi-Language-Cloud-Based-Compiler",
     tech: ["React", "Node.js", "Express", "JavaScript", "HTML", "CSS"],
     bullets: [
       "Developed a compiler supporting C, C++, Python, Java, and JavaScript.",
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Expense Tracker Web App",
-    link: "https://github.com/rishinpandit09",
+    link: "https://github.com/rishinpandit09/expense-tracker/tree/main",
     tech: ["Node.js", "Express.js", "MongoDB", "Auth0"],
     bullets: [
       "Built a secure app for tracking expenses with Auth0 login.",
