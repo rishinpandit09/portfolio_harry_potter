@@ -64,7 +64,7 @@ export default function About() {
           <FaGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/rishin-pandit09/"
+          href="https://www.linkedin.com/in/rishiin-pandit09/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-2xl text-slytherin hover:text-slytherin/80 transition-colors"

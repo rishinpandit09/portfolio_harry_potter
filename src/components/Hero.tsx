@@ -24,7 +24,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.5 }}
       >
-        Welcome, I'm Rishin ⚡
+        Welcome, I'm Rishiin ⚡
       </motion.h2>
       <motion.p
         className="max-w-xl mx-auto text-lg text-ravenclaw"

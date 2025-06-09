@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       <footer className="relative z-10 text-center py-6 text-sm text-ravenclaw bg-parchment/50">
-        © 2025 Rishin Pandit • Mischief Managed ⚡
+        © 2025 Rishiin Pandit • Mischief Managed ⚡
       </footer>
     </div>
   );
